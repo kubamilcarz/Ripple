@@ -1,8 +1,16 @@
+//
+//  HapticsManagers.swift
+//  Ripple
+//
+//  Created by Kuba on 18/5/25.
+//
+
 import Foundation
 import CoreHaptics
 import UIKit
 
-public final actor HapticManager {
+public final actor HapticsManager {
+    
     private let logger: HapticLogger?
     
     @MainActor private var notificationGenerator: UINotificationFeedbackGenerator? = nil
@@ -323,10 +331,9 @@ public final actor HapticManager {
             await logger?.trackEvent(event: event)
         }
     }
-    
 }
 
-extension HapticManager {
+extension HapticsManager {
     
     enum Event: HapticLogEvent {
         case customHapticsNotSupported

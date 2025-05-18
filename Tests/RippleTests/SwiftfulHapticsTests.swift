@@ -1,5 +1,5 @@
 import XCTest
-@testable import SwiftfulHaptics
+@testable import Ripple
 
 final class SwiftfulHapticsTests: XCTestCase {
     func testExample() throws {

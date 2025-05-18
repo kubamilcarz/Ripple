@@ -1,8 +1,8 @@
 //
 //  HapticOption.swift
-//  
+//  Ripple
 //
-//  Created by Nick Sarno on 5/20/24.
+//  Created by Kuba on 18/5/25.
 //
 
 import Foundation
@@ -104,4 +104,3 @@ public enum HapticOption: CaseIterable, Sendable {
         ]
     }
 }
-

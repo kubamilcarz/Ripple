@@ -1,9 +1,10 @@
 //
 //  Error+EXT.swift
-//  SwiftfulHaptics
+//  Ripple
 //
-//  Created by Nicholas Sarno on 12/18/24.
+//  Created by Kuba on 5/18/25.
 //
+
 import Foundation
 
 extension Error {

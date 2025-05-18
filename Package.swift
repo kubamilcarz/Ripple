@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "SwiftfulHaptics",
+    name: "Ripple",
     platforms: [
-        .macOS(.v12), .iOS(.v13), .tvOS(.v13)
+        .iOS(.v13), .tvOS(.v13)
     ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "SwiftfulHaptics",
-            targets: ["SwiftfulHaptics"]),
+            name: "Ripple",
+            targets: ["Ripple"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftfulHaptics"),
+            name: "Ripple"),
         .testTarget(
-            name: "SwiftfulHapticsTests",
-            dependencies: ["SwiftfulHaptics"]),
+            name: "RippleTests",
+            dependencies: ["Ripple"]),
     ]
 )

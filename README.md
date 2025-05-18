@@ -1,16 +1,14 @@
-# SwiftfulHaptics  📳
+# Ripple  📳
 
-Custom haptics for Swift applications.
-
-Sample project: https://github.com/SwiftfulThinking/SwiftfulHapticsExample
+Forked SwiftfulHaptics
 
 ## Setup
 
 ```swift
-import SwiftfulHaptics
+import Ripple
 
-let hapticManager = HapticManager(logger: HapticLogger?)
-let hapticManager = HapticManager()
+let hapticsManager = HapticsManager(logger: HapticLogger?)
+let hapticsManager = HapticsManager()
 ```
 
 ## Usage
@@ -19,7 +17,7 @@ Call prepare prior to triggering a haptic to improve response time the first tim
 
 ```swift
 Task {
-     await hapticManager.prepare(option: option)
+     await hapticsManager.prepare(option: option)
 }
 ```
 
@@ -27,7 +25,7 @@ Then call play to trigger the haptic.
 
 ```swift
 Task {
-     await hapticManager.play(option: option)
+     await hapticsManager.play(option: option)
 }
 ```
 
@@ -35,7 +33,7 @@ Call tearDown to remove the haptic engine from memory. This is not required.
 
 ```swift
 Task {
-     await hapticManager.tearDown(option: option)
+     await hapticsManager.tearDown(option: option)
 }
 ```
 
@@ -94,8 +92,3 @@ func tearDownAll() async throws
 ## Contribute
 
 Open a PR to add a custom pattern as an option within the framework.
-
-
-
-
-

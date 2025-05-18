@@ -1,22 +1,26 @@
 //
-//  AuthLogger.swift
-//  SwiftfulHaptics
+//  HapticLogger.swift
+//  Ripple
 //
-//  Created by Nicholas Sarno on 12/18/24.
+//  Created by Kuba on 5/18/25.
 //
+
 @MainActor
 public protocol HapticLogger {
+    
     func trackEvent(event: HapticLogEvent)
     func addUserProperties(dict: [String: Any], isHighPriority: Bool)
 }
 
 public protocol HapticLogEvent {
+    
     var eventName: String { get }
     var parameters: [String: Any]? { get }
     var type: HapticLogType { get }
 }
 
 public enum HapticLogType: Int, CaseIterable, Sendable {
+    
     case info // 0
     case analytic // 1
     case warning // 2
